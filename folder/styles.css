@@ -1,0 +1,118 @@
+#index_style{
+	background-size: 100%;
+}
+
+#title_tag_style{
+	text-align: center;
+	font-family: monospace;
+	/*
+	color:cyan;
+	*/
+	border-width: 4px;
+	border-style: solid;
+	/*
+	border-color: red;
+	*/
+	border-radius: 25px;
+	padding: 8px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#dir_map_link{
+	text-align: center;
+	font-family: monospace;
+	/*
+	color:cyan;
+	*/
+	border-width: 4px;
+	border-style: solid;
+	/*
+	border-color: red;
+	*/
+	border-radius: 25px;
+	padding: 8px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 25px;
+}
+#two_way_link{
+	text-align: center;
+	font-family: monospace;
+	/*
+	color:cyan;
+	*/
+	border-width: 4px;
+	border-style: solid;
+	/*
+	border-color: red;
+	*/
+	border-radius: 25px;
+	padding: 8px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#full_assoc_link{
+	text-align: center;
+	font-family: monospace;
+	/*
+	color:cyan;
+	*/
+	border-width: 4px;
+	border-style: solid;
+	/*
+	border-color: red;
+	*/
+	border-radius: 25px;
+	padding: 8px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#dir_table{
+    text-align: center;
+    /*border: 2px solid black;*/
+	border-style: none;
+	border-collapse: separate;
+    /*width: 50%;*/
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 25px;
+}
+#two_table{
+	text-align: center;
+    border: 2px solid black;
+	border-style: none;
+    border-collapse: separate;
+    /*width: 50%;*/
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 25px;
+}
+#full_table{
+	text-align: center;
+    /*border: 2px solid black;*/
+	border-style: none;
+    border-collapse: separate;
+    /*width: 50%;*/
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 25px;
+} 
+#first_col_style{
+    width: 5px;
+}
+#second_col_style{
+    width: 25px;
+}
+#reset_button{
+    background-color: #f44336;
+}
