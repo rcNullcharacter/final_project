@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fully associative</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scr.js"></script>
+	</head>	
+
+	<body>
+		<table style="height: 400px; width: 400px;"id="full_table" border="2px">
+            <tr style="background-color: #f9c17c">
+                <th>Set#</th>
+                <th>Line#</th>
+                <th>Value</th>
+            </tr>
+            <tr> 
+                <td style="font-size: 50px;"rowspan="8">0</td>
+                <td style="background-color: #f9827c">#0</td>    
+                <td style="background-color: #f9827c" id="unit0">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#1</td>    
+                <td id="unit1">EMPTY</td>
+            </tr>
+            <tr>
+                <td style="background-color: #f9827c">#2</td>     
+                <td style="background-color: #f9827c"id="unit2">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#3</td>      
+                <td id="unit3">EMPTY</td>
+            </tr>
+            <tr>
+                <td style="background-color: #f9827c">#4</td> 
+                <td style="background-color: #f9827c" id="unit4">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#5</td>      
+                <td id="unit5">EMPTY</td>
+            </tr>
+            <tr>
+                <td style="background-color: #f9827c">#6</td>     
+                <td style="background-color: #f9827c"id="unit6">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#7</td> 
+                <td id="unit7">EMPTY</td>
+            </tr>
+        </table>
+        <input id="full_assoc_input">
+        <button id="full_assoc_cache_button" onclick="full_assoc_final_call()">Cache</button>
+        <br>
+        <input id="full_assoc_search">
+        <button id="full_assoc_search_button" onclick="full_assoc_search()">Search</button>
+        <br>
+        <button id="reset_button" onclick="reset()">RESET</button>
+        <script>
+            var input = document.getElementById("full_assoc_input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("full_assoc_cache_button").click();
+            }
+        });
+        var tw_input = document.getElementById("full_assoc_search").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("full_assoc_search_button").click();
+            }
+        });
+        </script>
+				
+	</body>
+</html>
