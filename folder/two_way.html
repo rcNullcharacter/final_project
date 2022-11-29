@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2-way set associative</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scr.js"></script>
+	</head>	
+
+	<body>
+		<table style="height: 400px;" id="two_table" border="2px">
+            <tr>
+                <th style="width: 70px;">Set#</th>
+                <th style="width: 150px">Line#</th>
+                <th style="width: 150px;">Value</th>
+            </tr>
+            <tr  style="background-color: #bee9e4"> 
+                <td id="row0" rowspan="2">#0</td>    
+                <td>0</td>
+                <td id="s0cell0">EMPTY</td>
+            </tr>
+            <tr>   
+                <td>1</td>
+                <td id="s0cell1">EMPTY</td>
+            </tr>
+            <tr  style="background-color: #bee9e4">
+                <td id="row1" rowspan="2">#1</td>      
+                <td>0</td>
+                <td id="s1cell0">EMPTY</td>
+            </tr>
+            <tr>
+                <td>1</td> 
+                <td id="s1cell1">EMPTY</td>
+            </tr>
+            <tr  style="background-color: #bee9e4">
+                <td id="row2" rowspan="2">#2</td>     
+                <td>0</td>
+                <td id="s2cell0">EMPTY</td>
+            </tr>
+            <tr>  
+                <td>1</td>
+                <td id="s2cell1">EMPTY</td>
+            </tr>
+            <tr  style="background-color: #bee9e4">
+                <td id="row3" rowspan="2">#3</td> 
+                <td>0</td>
+                <td id="s3cell0">EMPTY</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td id="s3cell1">EMPTY</td>
+            </tr>
+        </table>
+        <input id="tw_input">
+        <!-- the function will be eventually be switched and called final_call -->
+        <button id="twButton" onclick="two_way_final_call()">Cache</button>
+        <br>
+        <input id="tw_search">
+        <button id="tw_search_button" onclick="tw_search()">Search</button>
+        <br>
+        <button id="reset_button" onclick="reset()">RESET</button>
+        <script>
+            var input = document.getElementById("tw_input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("twButton").click();
+            }
+        });
+        var tw_input = document.getElementById("tw_search").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("tw_search_button").click();
+            }
+        });
+        </script>
+			
+	</body>
+</html>
