@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Direct mapped</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scr.js"></script>
+	</head>	
+    <style>
+        th,td{
+            border-radius: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+	<body>
+		<table style="height: 400px;" id="dir_table">
+            <colgroup>
+                <col style="background-color: #F28500;">
+            </colgroup>
+            <tr>
+               <th style="width:10%">Line #</th>
+               <th>Value</th> 
+            </tr>    
+            <tr> 
+                <td>#0</td>    
+                <td id="v_row0">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#1</td>    
+                <td id="v_row1">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#2</td>     
+                <td id="v_row2">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#3</td>      
+                <td id="v_row3">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#4</td> 
+                <td id="v_row4">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#5</td>      
+                <td id="v_row5">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#6</td>     
+                <td id="v_row6">EMPTY</td>
+            </tr>
+            <tr>
+                <td>#7</td> 
+                <td id="v_row7">EMPTY</td>
+            </tr>
+        </table>
+        <input id="my_input">
+        <button id ="dm_cache_button" onclick="dir_map_final_call()">Cache</button>
+        <br>
+        <input id="search_input">
+        <button id="dir_search_button" onclick="dir_search()">Search</button>
+        <br>
+        <button id="reset_button" onclick="reset()">RESET</button>
+        <script>
+            var input = document.getElementById("my_input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("dm_cache_button").click();
+            }
+        });
+        var dir_input = document.getElementById("search_input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("dir_search_button").click();
+            }
+        });
+        </script>
+			
+	</body>
+</html>
